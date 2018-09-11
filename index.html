@@ -2,11 +2,104 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="«Mishka»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+      </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="page-main">
 
+      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+
+      <section class="products-type">
+        <header class="products-type__header">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="products-type__list">
+            <li class="products-type__item">
+              <h3 class="products-type__title">Предметы интерьера</h3>
+              <img class="products-type__icon" src="img/.svg" width="40" height="62" alt="«Предметы интерьера»">
+            </li>
+            <li class="products-type__item">
+              <h3 class="products-type__title">Детские игрушки</h3>
+              <img class="products-type__icon" src="img/.svg" width="60" height="60" alt="«Детские игрушки»">
+            </li>
+        </header>
+        <div class="product__wrapper">
+          <h2 class="product__title">Вязаные корзинки</h2>
+          <b class="product__label">Товар недели</b>
+          <p class="product__intro">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="product__options">
+            <tr>
+              <td class="product__option">Цвет:</td>
+              <td class="product__field">«Тиффани»/серый</td>
+            </tr>
+           <tr>
+             <td class="product__option">Диаметр:</td>
+             <td class="product__field">25 см</td>
+           </tr>
+           <tr>
+             <td class="product__option">Высота:</td>
+             <td class="product__field">15 см</td>
+           </tr>
+         </table>
+         <img class="product__picture" src="img/.svg" width="260" height="315" alt="«Вязаные корзинки»">
+         <b class="product__price">Цена: 990 руб.</b>
+         <a href="form.html" class="product__order button">Заказать</a>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__wrapper">
+        <h2 class="features__title">Коротко о нас:</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Цветок»">
+            <p class="features__description">Экологически чистые материалы</p>
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Купюра»">
+            <p class="features__description">Скандинавский стиль по российской цене</p>
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Сердце»">
+            <p class="features__description">Увеличивает лайки на фотографиях</p>
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Клубок»">
+            <p class="features__description">Связано вручную с любовью и умилением</p>
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Ракета»">
+            <p class="features__description">Поддержка отечественного производителя</p>
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="img/.svg" width="260" height="315" alt="Иконка «Подарок»">
+            <p class="features__description">Поставляется в подарочной упаковке</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
