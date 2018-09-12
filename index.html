@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Мишка</title>
+    <title>«Mishka»</title>
   </head>
   <body>
     <header class="page-header">
@@ -101,5 +101,79 @@
         </ul>
       </div>
     </section>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко
+             такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
+           игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <b class="reviews__author-user-name">@misssssiskras</b>
+          </blockquote>
+          <div class="reviews__links">
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <a class="reviews__to-write button" href="#">Написать</a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <table class="contacts__options">
+        <tr>
+          <td class="contacts__option">e-mail:</td>
+          <td class="contacts__field">info@mimimishkashop.ru</td>
+        </tr>
+       <tr>
+         <td class="contacts__option">адрес:</td>
+         <td class="product__field">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</td>
+       </tr>
+     </table>
+     <div class="map">
+       <h2 class="visually-hidden">Как нас найти</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572347!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1534187712363"
+         width="320" height="457" style="border:0" allowfullscreen>
+       </iframe>
+     </div>
+     <a class="contacts__button button" href="#">Напишите нам</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal-order">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <b class="modal__text">Выберите размер:</b>
+    <ul class="modal__size-list">
+      <li class="modal__size-item modal__size-item--active">s</li>
+      <li class="modal__size-item">m</li>
+      <li class="modal__size-item">l</li>
+    </ul>
+    <button class="button modal__button">Добавить</button>
+  </section>
+  <script src="scripts/main.js"></script>
   </body>
 </html>
