@@ -1,0 +1,17 @@
+.products-type__header {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.products-type__list {
+  @include clear;
+}
+.products-type__item {
+  @include clear;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $light;
+  background-color: $tiffany;
+}

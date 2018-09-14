@@ -1,0 +1,23 @@
+.main-nav__list {
+  @include clear;
+}
+.site-list__item {
+  display: block;
+
+  padding-top: 30px;
+  padding-right: auto;
+  padding-bottom: 30px;
+  padding-left: 46px;
+  vertical-align: middle;
+
+  border-bottom: 1px solid $grey;
+  color: $dark;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $dark-grey;
+  }
+  &:active {
+    color: $grey;
+  }
+}

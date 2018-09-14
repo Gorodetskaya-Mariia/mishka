@@ -1,0 +1,95 @@
+@import url(../sass/normalize.css);
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff"); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff; }
+
+.main__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.site-list__item {
+  display: block;
+  padding-top: 30px;
+  padding-right: auto;
+  padding-bottom: 30px;
+  padding-left: 46px;
+  vertical-align: middle;
+  border-bottom: 1px solid #bababa;
+  color: #000000;
+  text-decoration: none; }
+  .site-list__item:hover, .site-list__item:focus {
+    color: #6e6e6e; }
+  .site-list__item:active {
+    color: #bababa; }
+
+.page-main__title {
+  padding-top: 70px;
+  padding-right: 0;
+  padding-bottom: 75px;
+  padding-left: 0;
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #f2f2f2; }
+
+.products-type__header {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.products-type__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.products-type__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #63d1bb; }

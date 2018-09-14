@@ -1,0 +1,31 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: $dark;
+  background-color: $light;
+}
+.main__wrapper {
+  width: 380px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+//не получается задать стили для лого при наведении
+// .page-header__logo {
+//   &:hover,
+//   &:focus {
+//     .page-header__logo--image {
+//     fill: $dark-grey;
+//     }
+//   }
+//   &:active {
+//     fill: $grey;
+//   }
+// }
