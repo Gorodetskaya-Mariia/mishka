@@ -10,7 +10,7 @@
   padding-left: 46px;
   vertical-align: middle;
 
-  border-bottom: 1px solid $grey;
+  @include border;
   color: $dark;
   text-decoration: none;
   &:hover,

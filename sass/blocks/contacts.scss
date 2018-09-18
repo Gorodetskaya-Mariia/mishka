@@ -1,0 +1,46 @@
+.contacts {
+  margin-bottom: 42px;
+
+  font-size: 18px;
+}
+
+.contacts__title {
+  margin-bottom: 42px;
+}
+
+.contacts__wrapper {
+  @include container;
+  text-align: left;
+}
+
+.contacts__options {
+  margin-bottom: 42px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__row {
+  // margin-bottom: 37px;
+  padding-bottom: 42px;
+}
+
+.contacts__option {
+  padding: 0;
+  padding-right: 25px;
+  // margin-bottom: 37px;
+}
+
+.contacts__field {
+  padding: 0;
+  // margin-bottom: 37px;
+}
+
+.contacts__field--active {
+  border-bottom: 1px solid $tiffany;
+}
+
+.contacts__write-us {
+  padding-left: 30px;
+  padding-right: 30px;
+}

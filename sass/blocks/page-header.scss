@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  font-size: 17px;
+
   line-height: 24px;
   font-weight: 700;
 
@@ -9,13 +9,13 @@
   background-color: $light;
 }
 .main__wrapper {
-  width: 380px;
+  width: 340px;
   box-sizing: border-box;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 //не получается задать стили для лого при наведении
 // .page-header__logo {

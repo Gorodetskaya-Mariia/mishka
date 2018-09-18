@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
 }
+
 @mixin title {
   padding-top: 70px;
   padding-right: 0;
@@ -17,4 +18,13 @@
 
   color: $dark;
   background-color: lighten($dark, 95%);
+}
+
+@mixin container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin border {
+  border-bottom: 1px solid $light-grey;
 }
