@@ -6,6 +6,8 @@
 
 .catalog__item {
   @include clear;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 
   color: $dark;
@@ -17,7 +19,7 @@
   width: 260px;
   height: 195px;
   margin-bottom: 28px;
-  z-index: 100;
+  order: 1;
 }
 
 .catalog__title {
@@ -27,7 +29,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  z-index: 1;
+  order: 2;
 }
 
 .catalog__description {
@@ -40,6 +42,7 @@
   font-size: 13px;
   line-height: 30px;
   border-bottom: 1px solid $light-grey;
+  order: 3;
 }
 
 .catalog__to-buy {
@@ -48,6 +51,7 @@
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 30px;
+  order: 4;
 }
 
 .catalog__price {

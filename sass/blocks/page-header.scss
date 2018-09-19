@@ -8,14 +8,18 @@
   color: $dark;
   background-color: $light;
 }
+
+.page-header__logo {
+  @include clear;
+  @include border;
+  position: relative;
+  margin: 21px auto;
+}
 .main__wrapper {
-  width: 340px;
+  width: 320px;
   box-sizing: border-box;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 0;
 }
 //не получается задать стили для лого при наведении
 // .page-header__logo {

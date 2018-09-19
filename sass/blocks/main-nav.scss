@@ -1,7 +1,11 @@
 .main-nav__list {
   @include clear;
+
+  &--extra {
+    display: none;
+  }
 }
-.site-list__item {
+.main-nav__item {
   display: block;
 
   padding-top: 30px;
@@ -13,11 +17,124 @@
   @include border;
   color: $dark;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: $dark-grey;
   }
+
   &:active {
     color: $grey;
   }
 }
+.page-header__delivery {
+  display: none;
+}
+.main-nav__toggle {
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    display: block;
+    width: 20px;
+    height: 14px;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+
+    &--open {
+      background: url("../img/icon-menu-open.svg") no-repeat;
+    }
+
+    &--close {
+      top: 28px;
+      right: 30px;
+      width: 21px;
+      height: 20px;
+      background: url("../img/icon-menu-close.svg") no-repeat;
+    }
+
+    &:focus {
+      outline: none;
+    }
+}
+
+// @media (min-width: $tablet-width) {
+//   .main-nav__toggle {
+//     display: none;
+//   }
+//
+//   .main-nav__list {
+//     &--main {
+//       position: absolute;
+//       bottom: 0;
+//       transform: translateY(100%);
+//       width: 390px;
+//       // font-size: 0;
+//     }
+//
+//     &--user {
+//       float: right;
+//       width: 350px;
+//       // font-size: 0;
+//     }
+//   }
+//   .main-nav__item {
+//   &--main {
+//       margin-right: 36px;
+//
+//       &:nth-child(even) {
+//         margin-right: 0;
+//       }
+//   }
+//
+//   &--user {
+//       // min-width: 82px;
+//       border-left: 1px solid $light-grey;
+//       // font-size: 0;
+//     }
+//   }
+// }
+// @media (min-width: $desktop-width) {
+//   .main-nav__list {
+//     &--main {
+//       position: static;
+//       float: left;
+//       transform: none;
+//     }
+//
+//     &--extra {
+//       position: absolute;
+//       bottom: 0;
+//       transform: translateY(100%);
+//       display: block;
+//       width: 390px;
+//       // font-size: 0;
+//     }
+//   }
+//
+//   .main-nav__item {
+//     &--main {
+//       margin-right: 0;
+//
+//       &:nth-child(odd) {
+//         width: 184px;
+//       }
+//
+//       &:nth-child(even) {
+//         padding-left: 35px;
+//         border-left: 1px solid $light-grey;
+//       }
+//     }
+//
+//     &--extra {
+//       &:nth-child(odd) {
+//         width: 184px;
+//       }
+//
+//       &:nth-child(even) {
+//         padding-left: 35px;
+//       }
+//     }
+//   }
+// }
