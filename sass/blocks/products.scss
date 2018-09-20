@@ -18,7 +18,7 @@
 
 .products-type__item {
   @include clear;
-  @include container;
+  // @include container;
   padding-top: auto;
   padding-bottom: auto;
   font-size: 19px;
@@ -31,7 +31,7 @@
 }
 
 .product__wrapper {
-  @include container;
+  // @include container;
   text-align: left;
 }
 

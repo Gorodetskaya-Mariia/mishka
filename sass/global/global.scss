@@ -39,3 +39,15 @@ a {
   border: 2px solid $text-grey;
   cursor: pointer;
 }
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

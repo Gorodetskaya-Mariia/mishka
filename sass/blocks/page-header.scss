@@ -12,14 +12,44 @@
 .page-header__logo {
   @include clear;
   @include border;
-  position: relative;
-  margin: 21px auto;
+  text-align: center;
+  // position: relative;
+
+  &--image {
+    margin: 21px auto;
+  }
 }
 .main__wrapper {
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
+  border: 1px solid red;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-header__logo {
+    text-align: left;
+  }
+
+  .main__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+@media (min-width: $desktop-width) {
+
+  .page-header__logo {
+    position: absolute;
+    right: 50%;
+    // text-align: left;
+  }
+
+  .main__wrapper {
+    width: 1150px;
+    padding: 0 50px;
+  }
 }
 //не получается задать стили для лого при наведении
 // .page-header__logo {
