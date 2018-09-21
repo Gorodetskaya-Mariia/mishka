@@ -1,14 +1,26 @@
+// .page-main {
+//   background-color: rgb(249, 249, 249);
+//   background-image: url("../img/hero-mobile@1x.jpg");
+//   background-position: 0 0;
+//   background-repeat: no-repeat;
+//   // background-size: 320px auto;
+// }
 .page-main__main-title {
   @include title;
+  background: transparent;
   &--catalog {
     padding-top: 73px;
     padding-bottom: 78px;
     margin-bottom: 30px;
+
+    background-color: lighten($dark, 95%);
   }
-  &--form{
+  &--form {
     padding-top: 73px;
     padding-bottom: 75px;
     margin-bottom: 25px;
+
+    background-color: lighten($dark, 95%);
   }
 }
 

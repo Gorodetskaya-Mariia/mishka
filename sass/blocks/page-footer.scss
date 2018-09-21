@@ -1,10 +1,13 @@
-.page-footer__wrapper {
+.page-footer {
   // @include container;
   background-color: lighten($dark, 95%);
 }
 .page-footer__social {
   // align-items: center;
   border-bottom: 1px solid lighten($dark, 91%);
+}
+.page-footer__logo {
+  display: none;
 }
 .social__list {
   @include clear;
@@ -90,5 +93,18 @@
   fill: rgb(189, 227, 221);
 
   transition: 0.2s;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-footer__logo {
+    display: block;
+  }
+  .page-footer__wrapper {
+    display: flex;
   }
 }

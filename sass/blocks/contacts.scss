@@ -9,7 +9,6 @@
 }
 
 .contacts__wrapper {
-  // @include container;
   text-align: left;
 }
 
@@ -43,4 +42,43 @@
 .contacts__write-us {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__options {
+    width: auto;
+  }
+  .map__picture {
+    width: 768px;
+  }
+  .contacts__button {
+    width: 230px;
+  }
+  .contacts__write-us {
+  text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    margin-left: 175px;
+  }
+  .contacts__options {
+    width: calc("50% - 64px");
+  }
+
+  .map__picture {
+    position: absolute;
+    top: -40%;
+    right: 0;
+    width: 525px;
+  }
+  .contacts__button {
+    width: 230px;
+  }
+  .contacts__write-us {
+    width: calc("50% - 64px");
+    text-align: left;
+  }
 }

@@ -25,3 +25,55 @@
 .features__description {
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 334px;
+
+    &--price {
+    order: 3;
+    }
+    &--likes {
+    order: 5;
+    }
+    &--knitting {
+    order: 2;
+    }
+    &--rocket {
+    order: 4;
+    }
+    &--packed {
+    order: 6;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .features {
+    margin-left: 175px;
+  }
+  .features__item {
+    width: 350px;
+
+    &--price {
+    order: 3;
+    }
+    &--likes {
+    order: 5;
+    }
+    &--knitting {
+    order: 2;
+    }
+    &--rocket {
+    order: 4;
+    }
+    &--packed {
+    order: 6;
+    }
+  }
+}

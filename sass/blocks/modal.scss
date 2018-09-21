@@ -10,6 +10,7 @@
 }
 
 .modal__title {
+  width: 167px;
   margin-bottom: 23px;
 
   font-size: 25px;
@@ -57,5 +58,18 @@
   &:active {
     border-color: $tiffany;
     outline: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .modal-order {
+    width: 562px;
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+  .modal__title {
+    width: auto;
+  }
+  .modal__size-item {
+    padding: 18px 50px;
   }
 }

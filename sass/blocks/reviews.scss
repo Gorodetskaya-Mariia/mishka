@@ -1,6 +1,7 @@
 .reviews__wrapper {
   // @include container;
   text-align: left;
+  border: 1px solid red;
 }
 
 .reviews__title {
@@ -13,6 +14,7 @@
 
 .reviews__item {
   @include clear;
+  position: relative;
   margin-bottom: 33px;
 
   color: $text-grey;
@@ -66,4 +68,42 @@
   border: 1px solid $light-grey;
   background-color: $light;
   border-left: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .reviews {
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .reviews__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__links {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 167px;
+  }
+  .reviews__prev,
+  .reviews__next {
+    border: none;
+  }
+  .reviews__to-write {
+    position: absolute;
+    width: 174px;
+    top: 0;
+    right: 5%;
+  }
+}
+@media (min-width: $desktop-width) {
+
+  .reviews {
+    margin-left: 175px;
+    margin-bottom: 230px;
+  }
+  .reviews__item {
+    width: 700px;
+  }
 }

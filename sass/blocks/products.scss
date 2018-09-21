@@ -1,23 +1,27 @@
 .products-type__header {
   margin-bottom: 32px;
-  width: 320px;
-  height: 373px;
-
+  margin-top: 0px;
+  background-color: rgb(249, 249, 249);
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 320px auto;
+  // width: 320px;
+  height: 489px;
+  border: 1px solid red;
 }
-@media (min-width: $tablet-width) {
-  .products-type__header {
-    height: 746px;
-  }
-}
+
 .products-type__list {
   @include clear;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // align-items: flex-end;
+  // margin-top: auto;
 }
 
 .products-type__item {
-  @include clear;
+  // @include clear;
   // @include container;
   padding-top: auto;
   padding-bottom: auto;
@@ -77,6 +81,7 @@
 }
 
 .product__price {
+  @include clear;
   margin-bottom: 26px;
 
   text-align: center;
@@ -89,4 +94,87 @@
 
 .product__order {
   margin-bottom: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .products-type__header {
+    height: 746px;
+    background-size: $tablet-width 746px;
+  }
+  .products-type__list {
+    // width: 668px;
+    flex-direction: row;
+    margin-top: 100px;
+
+  }
+  .products-type__item {
+    width: 334px;
+  }
+  .product__wrapper {
+    position: relative;
+    &--title {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .product__label {
+    width: 95px;
+    text-align: center;
+    margin-right: 15px;
+  }
+  .product__intro,
+  .product__options {
+    width: calc("50% - 44px");
+  }
+
+  .product__picture {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: calc("50% - 50px");
+    height: auto;
+    margin: 0;
+  }
+  .product__price,
+   .product__order {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-type__header {
+    height: 746px;
+    background-size: $desktop-width 746px;
+  }
+
+  .products-type__list {
+    width: 1050px;
+
+  }
+  .products-type__item {
+    width: 525px;
+  }
+  .product__wrapper {
+    // position: relative;
+    &--title {
+      justify-content: flex-start;
+    }
+  }
+  .product__title {
+    order: 2;
+  }
+  .product__label {
+    width: 95px;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    order: 1;
+  }
+  .product__intro,
+  .product__options,
+  .product__price,
+  .product__order {
+    margin-left: 175px;
+  }
 }

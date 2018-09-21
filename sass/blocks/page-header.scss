@@ -19,37 +19,45 @@
     margin: 21px auto;
   }
 }
-.main__wrapper {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 30px;
-  border: 1px solid red;
-}
+// .main__wrapper {
+//   width: 320px;
+//   box-sizing: border-box;
+//   margin: 0 auto;
+//   padding: 0 30px;
+//   border: 1px solid red;
+// }
 
 @media (min-width: $tablet-width) {
 
   .page-header__logo {
+    // margin-right: auto;
+    background-image: url("../img/mishka-logo-tablet.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 113px auto;
     text-align: left;
   }
 
-  .main__wrapper {
-    width: 768px;
-    padding: 0 50px;
-  }
+  // .main__wrapper {
+  //   width: 768px;
+  // }
 }
 @media (min-width: $desktop-width) {
 
   .page-header__logo {
     position: absolute;
     right: 50%;
+    // margin-right: auto;
+    background-image: url("../img/mishka-logo-desktop.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 149px auto;
     // text-align: left;
   }
 
-  .main__wrapper {
-    width: 1150px;
-    padding: 0 50px;
-  }
+  // .main__wrapper {
+  //   width: 1150px;
+  // }
 }
 //не получается задать стили для лого при наведении
 // .page-header__logo {
