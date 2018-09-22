@@ -11,12 +11,13 @@
 }
 
 .order__field {
+  @include clear;
   border: none;
-  .type {
+  &--type {
   margin-bottom: 30px;
   }
-  .color {
-  margin-bottom: 38px;
+  &--color {
+    margin-bottom: 38px;
   }
   .order__additional {
   margin-bottom: 16px;
@@ -153,4 +154,61 @@
 .filter-input-checkbox + .filter__name:hover::after,
 .filter-input-checkbox + .filter__name:focus::after {
   opacity: 1;
+}
+@media (min-width: $tablet-width) {
+  .order__intoduction {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .order__list  {
+    margin-left: 167px;
+    margin-top: -30px;
+  }
+  .order__field {
+
+    &--color {
+      background-color: rgb(241, 241,241);
+    }
+  }
+  .order__label {
+    width: 158px;
+  }
+  .client-data__input-email {
+    margin-left: 117px;
+  }
+  .client-data__input-phone,
+  .order__message {
+    margin-left: 137px;
+  }
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .color__item {
+    margin-right: 20px;
+  }
+  .order__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .order__comment {
+    order: 2;
+  }
+
+  .order-button {
+    width: 230px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .order__intoduction {
+    margin-left: 175px;
+  }
+
+  .order__wrapper {
+    margin-right: 175px;
+    margin-left: 237px;
+  }
+  .order__field {
+    margin-left: 62px;
+  }
 }

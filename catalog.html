@@ -7,73 +7,91 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header main__wrapper">
+    <header class="page-header main__wrapper container">
       <a class="page-header__logo">
-        <img class="page-header__logo--image" src="img/logo-mobile.svg" width="86" height="35" alt="«Mishka»">
+          <img class="page-header__logo--image" src="img/logo-mobile.svg" width="86" height="35" alt="«Mishka»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <!-- <div class="main-nav__wrapper"> -->
-          <ul class="main-nav__list site-list">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+          <ul class="main-nav__list main-nav__list--main">
             <li>
-              <a class="site-list__item" href="#" disabled>Каталог товаров</a>
+              <a class="main-nav__item main-nav__item--main" href="catalog.html">Каталог товаров</a>
             </li>
             <li>
-              <a class="site-list__item" href="#">Вязание на заказ</a>
-            </li>
-            <li>
-              <a class="site-list__item" href="#">Поиск по сайту</a>
-            </li>
-            <li>
-              <a class="site-list__item" href="#">Корзина: пока пуста</a>
+              <a class="main-nav__item main-nav__item--main" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-      <!-- </div> -->
+          <ul class="main-nav__list main-nav__list--user">
+            <li>
+              <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+            </li>
+            <li>
+              <a class="main-nav__item main-nav__item--user" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--extra">
+              <li>
+                <a class="main-nav__item main-nav__item--extra" href="#">Новые поступления</a>
+              </li>
+              <li>
+                <a class="main-nav__item main-nav__item--extra" href="#">Распродажа</a>
+              </li>
+            </ul>
       </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
     </header>
-    <main class="page-main main__wrapper">
+
+    <main class="page-main container">
       <h1 class="page-main__main-title page-main__main-title--catalog">Каталог товаров</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
           <img class="catalog__image" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото «Зайчик-попрыгайчик»">
-          <p class="catalog__description">Рост 30 см, вес 200 г</p>
-          <div class="catalog__to-buy">
-            <b class="catalog__price">1 200 руб.</b>
-            <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a></a>
+          <div class="catalog__item__wrapper">
+            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+            <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            <div class="catalog__to-buy">
+              <b class="catalog__price">1 200 руб.</b>
+              <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a></a>
+            </div>
           </div>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Корзинка для белья</h3>
           <img class="catalog__image" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото «Зайчик-попрыгайчик»">
-          <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-          <div class="catalog__to-buy">
-            <b class="catalog__price">690 руб.</b>
-            <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a>
+          <div class="catalog__item__wrapper">
+            <h2 class="catalog__title">Корзина для белья</h2>
+            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog__to-buy">
+              <b class="catalog__price">690 руб.</b>
+              <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a>
+            </div>
           </div>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Большая корзинка для игрушек</h3>
           <img class="catalog__image" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото «Зайчик-попрыгайчик»">
-          <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-          <div class="catalog__to-buy">
-            <b class="catalog__price">1 500 руб.</b>
-            <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a></a>
+          <div class="catalog__item__wrapper">
+            <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog__to-buy">
+              <b class="catalog__price">1 500 руб.</b>
+              <a href="form.html" class="catalog__order button"><span class="visually-hidden">Заказать</span></a></a>
+            </div>
           </div>
         </li>
       </ul>
       <section class="video">
-        <h2 class="video__title">Процесс производства</h2>
         <video class="video__play" width="260" height="150" controls="controls" poster="video/duel.jpg">
           <source src="img/icon-video.svg" type='video/ogg; codecs="theora, vorbis"'>
         </video>
-        <p class="video__description">По просьбам наших<br>любимых фолловеров мы<br>сняли для вас подробное<br>
-          видео о том, как появляются<br>наши товары.</p>
-         <a href="form.html" class="video__order button">Сделать заказ</a>
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.</p>
+           <a href="form.html" class="video__order button">Сделать заказ</a>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer main__wrapper">
+    <footer class="page-footer main__wrapper container">
       <img class="page-footer__logo" src="img/logo-mobile.svg" width="86" height="35" alt="«Mishka»">
       <div class="page-footer__social social">
           <b class="social__title visually-hidden">Давайте дружить!</b>

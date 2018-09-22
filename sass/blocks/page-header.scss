@@ -31,6 +31,7 @@
 
   .page-header__logo {
     // margin-right: auto;
+    background-color: $light;
     background-image: url("../img/mishka-logo-tablet.png");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -48,6 +49,7 @@
     position: absolute;
     right: 50%;
     // margin-right: auto;
+    background-color: $light;
     background-image: url("../img/mishka-logo-desktop.png");
     background-position: 0 0;
     background-repeat: no-repeat;
