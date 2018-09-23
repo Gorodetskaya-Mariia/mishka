@@ -12,12 +12,22 @@
 .page-header__logo {
   @include clear;
   @include border;
+
   text-align: center;
   // position: relative;
 
   &--image {
+    display: block;
+    width: 86px;
+    height: 35px;
     margin: 21px auto;
   }
+}
+.page-header__delivery {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
 }
 // .main__wrapper {
 //   width: 320px;
@@ -31,17 +41,26 @@
 
   .page-header__logo {
     // margin-right: auto;
-    background-color: $light;
+    // background-color: $light;
     background-image: url("../img/mishka-logo-tablet.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 113px auto;
     text-align: left;
+
+    &--image {
+      width: 113px;
+      height: 46px;
+    }
   }
 
-  // .main__wrapper {
-  //   width: 768px;
-  // }
+  .page-header__delivery {
+      display: block;
+      position: absolute;
+      top: 115px;
+      left: 62%;
+      margin-left: auto;
+    }
 }
 @media (min-width: $desktop-width) {
 
@@ -49,14 +68,23 @@
     position: absolute;
     right: 50%;
     // margin-right: auto;
-    background-color: $light;
+    // background-color: $light;
     background-image: url("../img/mishka-logo-desktop.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 149px auto;
+
+    &--image {
+      width: 149px;
+      height: 72px;
+    }
     // text-align: left;
   }
 
+  .page-header__delivery {
+      left: 72%;
+      // margin-left: auto;
+  }
   // .main__wrapper {
   //   width: 1150px;
   // }
