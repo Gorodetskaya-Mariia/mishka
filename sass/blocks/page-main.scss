@@ -8,6 +8,7 @@
 .page-main__main-title {
   @include title;
   background: transparent;
+  letter-spacing: 1.2px;
   &--catalog {
     padding-top: 73px;
     padding-bottom: 78px;
@@ -22,7 +23,28 @@
 
     background-color: lighten($dark, 95%);
   }
+  @media (min-width: $tablet-width) {
+    width: 515px;
+    // letter-spacing: 1px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 43px;
+    line-height: 50px;
+
+  br {
+    display: none;
+  }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    padding-top: 130px;
+    font-size: 50px;
+    line-height: 57px;
+    font-family: "Open Sans Bold";
+  }
 }
+
 
 .page-main__title {
   @include clear;

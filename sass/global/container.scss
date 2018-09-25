@@ -1,5 +1,5 @@
 .container {
-  width: 320px;
+  width: 380px;
   box-sizing: border-box;
   margin: 0 auto;
   padding-left: 30px;
@@ -9,15 +9,14 @@
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
   }
 }

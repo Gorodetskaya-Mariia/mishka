@@ -7,11 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header main__wrapper container">
+    <header class="page-header container">
       <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
           <img class="page-header__logo--image" src="img/logo-mobile.svg" width="86" height="35" alt="«Mishka»">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list main-nav__list--main">
             <li>
@@ -51,19 +55,17 @@
 
     <main class="page-main main__wrapper">
 
-      <h1 class="page-main__main-title">Милые штуки<br>ручной<br>работы для дома</h1>
+      <h1 class="page-main__main-title">Милые штуки<br> ручной<br> работы для дома</h1>
 
       <article class="products-type  container">
         <header class="products-type__header">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="products-type__list">
-            <li class="products-type__item">
-              <h3 class="products-type__title">Предметы<br>интерьера</h3>
-              <img class="products-type__icon" src="img/icon-interior.svg" width="40" height="62" alt="«Предметы интерьера»">
+            <li class="products-type__item products-type__item--furnishings">
+              <a class="products-type__link products-type__link--furnishings" href="#">Предметы<br>интерьера</a>
             </li>
-            <li class="products-type__item">
-              <h3 class="products-type__title">Детские<br>игрушки</h3>
-              <img class="products-type__icon" src="img/icon-toy.svg" width="60" height="60" alt="«Детские игрушки»">
+            <li class="products-type__item products-type__item--toys">
+              <a class="products-type__link products-type__link--toys" href="#">Детские<br>игрушки</a>
             </li>
           </ul>
         </header>
