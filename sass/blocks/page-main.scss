@@ -7,8 +7,16 @@
 // }
 .page-main__main-title {
   @include title;
-  background: transparent;
+  // background: transparent;
   letter-spacing: 1.2px;
+  background-color: rgb(251, 251, 251);
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 320px;
+  height: 373px;
+  padding-bottom: 0;
   &--catalog {
     padding-top: 73px;
     padding-bottom: 78px;
