@@ -1,3 +1,7 @@
+
+.products-type {
+  width: 320px;
+}
 .products-type__header {
   // position: absolute;
   // top: 78px;
@@ -12,15 +16,11 @@
   // margin-top: -100px;
   // width: 320px;
   // height: 489px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-mobile@2x.jpg");
-  }
 }
 
 .products-type__list {
   @include clear;
-  margin-top: -115px;
+  margin-top: -110px;
   display: flex;
   flex-direction: column;
   // justify-content: flex-end;
@@ -80,10 +80,15 @@
 }
 
 .product__wrapper {
+  margin-bottom: 28px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
-  border: 1px solid red;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  background-size: auto 6px;
 }
 
 .product__title {
@@ -101,7 +106,7 @@
 }
 
 .product__intro {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   font-size: 15px;
   line-height: 24px;
@@ -109,26 +114,30 @@
 
 .product__options {
   margin-bottom: 28px;
+  border-collapse: collapse;
+  tr {
+    @include border;
+  }
 }
 
 .product__option,
 .product__field {
-  @include border;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  padding-top: 9px;
+  padding-left: 0;
+  padding-right: 20px;
+  padding-bottom: 10px;
 
   font-size: 15px;
-
 }
 
 .product__option {
-  padding-right: 32px;
+  padding-right: 28px;
 }
 
 .product__picture {
   width: 260px;
   height: 315px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .product__price {
@@ -145,7 +154,7 @@
 }
 
 .product__order {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {

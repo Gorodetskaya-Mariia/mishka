@@ -1,10 +1,11 @@
 .features__wrapper {
-  // @include container;
   text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .features__title {
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 }
 
 .features__list {
@@ -16,13 +17,53 @@
   @include clear;
   margin-bottom: 30px;
 
+  letter-spacing: 1.1px;
   color: $dark;
   background-color: $light;
+
+  &--price {
+    margin-bottom: 33px;
+  }
+
+  &--knitting {
+    margin-bottom: 34px;
+  }
+
+  &--packed {
+    margin-bottom: 27px;
+  }
 }
+
 .features__icon {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-left: 5px;
+
+  &--price {
+    margin-bottom: 22px;
+    margin-left: 0;
+  }
+
+  &--likes {
+    margin-bottom: 18px;
+  }
+
+  &--knitting,
+  &--packed {
+    margin-left: 0;
+  }
+
+  &--rocket {
+    margin-bottom: 22px;
+    margin-left: 3px;
+  }
+
+  &--packed {
+    margin-bottom: 18px;
+  }
 }
+
 .features__description {
+  @include clear;
   font-weight: 700;
 }
 

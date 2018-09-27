@@ -1,11 +1,13 @@
 .reviews__wrapper {
   // @include container;
   text-align: left;
-  border: 1px solid red;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 38px;
 }
 
 .reviews__title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .reviews__list {
@@ -15,20 +17,22 @@
 .reviews__item {
   @include clear;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
 
   color: $text-grey;
   background-color: $light;
 }
 .reviews__text {
   @include clear;
-  margin-bottom: 37px;
+
+  margin-bottom: 20px;
 
   font-size: 15px;
   line-height: 30px;
 }
 .reviews__author-name {
-  margin-bottom: 13px;
+  display: block;
+  margin-bottom: 1px;
 
   line-height: 24px;
   font-weight: 700;
@@ -36,16 +40,19 @@
 }
 
 .reviews__author-user-name {
+  display: block;
+  margin-bottom: 32px;
   line-height: 30px;
   font-weight: 400;
 }
 
 .reviews__links {
+  width: 260px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .reviews__prev {
   width: 50%;

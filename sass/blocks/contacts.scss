@@ -1,38 +1,31 @@
 .contacts {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   font-size: 18px;
 }
 
 .contacts__title {
-  margin-bottom: 42px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts__wrapper {
   text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
 }
 
 .contacts__options {
-  margin-bottom: 42px;
-
+  border-collapse: separate;
+  border-spacing: 0 25px;
   font-size: 15px;
   line-height: 30px;
 }
 
-.contacts__row {
-  // margin-bottom: 37px;
-  padding-bottom: 42px;
-}
-
 .contacts__option {
-  padding: 0;
-  padding-right: 25px;
-  // margin-bottom: 37px;
-}
-
-.contacts__field {
-  padding: 0;
-  // margin-bottom: 37px;
+  padding-right: 27px;
+  vertical-align: top;
 }
 
 .contacts__field--active {

@@ -89,50 +89,49 @@
              <td class="product__field">15 см</td>
            </tr>
          </table>
+         <img class="product__picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="«Вязаные корзинки»">
          <b class="product__price">Цена: 990 руб.</b>
          <a href="form.html" class="product__order button">Заказать</a>
-         <img class="product__picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="«Вязаные корзинки»">
       </div>
     </article>
-    <section class="features  container">
+    <section class="features">
       <div class="features__wrapper">
         <h2 class="features__title page-main__title">Коротко о нас:</h2>
         <ul class="features__list">
           <li class="features__item features__item--eco">
-            <img class="features__icon" src="img/icon-feature-1.svg" width="32" height="37" alt="Иконка «Цветок»">
+            <img class="features__icon features__icon--eco" src="img/icon-feature-1.svg" width="32" height="37" alt="Иконка «Цветок»">
             <p class="features__description">Экологически<br>чистые материалы</p>
           </li>
           <li class="features__item features__item--price">
-            <img class="features__icon" src="img/icon-feature-2.svg" width="47" height="27" alt="Иконка «Купюра»">
+            <img class="features__icon features__icon--price" src="img/icon-feature-3.svg" width="47" height="27" alt="Иконка «Купюра»">
             <p class="features__description">Скандинавский стиль<br>по российской цене</p>
           </li>
           <li class="features__item features__item--likes">
-            <img class="features__icon" src="img/icon-feature-3.svg" width="34" height="27" alt="Иконка «Сердце»">
+            <img class="features__icon features__icon--likes" src="img/icon-feature-5.svg" width="34" height="27" alt="Иконка «Сердце»">
             <p class="features__description">Увеличивает лайки<br>на фотографиях</p>
           </li>
-          <li class="features__item features__item-knitting">
-            <img class="features__icon" src="img/icon-feature-4.svg" width="35" height="34" alt="Иконка «Клубок»">
+          <li class="features__item features__item--knitting">
+            <img class="features__icon features__icon--knitting" src="img/icon-feature-2.svg" width="35" height="34" alt="Иконка «Клубок»">
             <p class="features__description">Связано вручную с<br>любовью и умилением</p>
           </li>
           <li class="features__item features__item--rocket">
-            <img class="features__icon" src="img/icon-feature-5.svg" width="55" height="23" alt="Иконка «Ракета»">
+            <img class="features__icon features__icon--rocket" src="img/icon-feature-4.svg" width="55" height="23" alt="Иконка «Ракета»">
             <p class="features__description">Поддержка отечественного<br>производителя</p>
           </li>
           <li class="features__item features__item--packed">
-            <img class="features__icon" src="img/icon-feature-6.svg" width="33" height="32" alt="Иконка «Подарок»">
+            <img class="features__icon features__icon--packed" src="img/icon-feature-6.svg" width="33" height="32" alt="Иконка «Подарок»">
             <p class="features__description">Поставляется в<br>подарочной упаковке</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="reviews  container">
+    <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title page-main__title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
             <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко
-             такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
-           игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+             такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
            </blockquote>
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <b class="reviews__author-user-name">@misssssiskras</b>
@@ -149,7 +148,7 @@
         <h2 class="contacts__title page-main__title">Контакты</h2>
         <table class="contacts__options">
           <tr class="contacts__row">
-            <td class="contacts__option">e&ndash;mail:</td>
+            <td class="contacts__option">e-mail:</td>
             <td class="contacts__field contacts__field--active">info@mimimishkashop.ru</td>
           </tr>
           <tr class="contacts__row">
@@ -170,7 +169,7 @@
     </section>
   </main>
 
-  <footer class="page-footer main__wrapper container">
+  <footer class="page-footer container">
     <img class="page-footer__logo" src="img/logo-mobile.svg" width="86" height="35" alt="«Mishka»">
     <div class="page-footer__social social">
         <b class="social__title visually-hidden">Давайте дружить!</b>
@@ -194,13 +193,25 @@
   <section class="modal-order main__wrapper container">
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
-    <ul class="modal__size-list">
+    <form class="form__modal" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form__modal-size-list">
+        <input class="form__input  form__input--modal-checkbox visually-hidden" type="radio" id="s-size" name="s-size" value="S" checked>
+        <label class="form__label  form__label--modal-checkbox" for="s-size">S</label>
+        <input class="form__input  form__input--modal-checkbox visually-hidden" type="radio" id="m-size" name="m-size" value="M">
+        <label class="form__label  form__label--modal-checkbox" for="m-size">M</label>
+        <input class="form__input  form__input--modal-checkbox visually-hidden" type="radio" id="l-size" name="l-size" value="L">
+        <label class="form__label  form__label--modal-checkbox" for="l-size">L</label>
+      </div>
+      <input class="button modal__button" type="submit" value="Добавить">
+    </form>
+    <!-- <ul class="modal__size-list">
       <li class="modal__size-item modal__size-item--active">s</li>
       <li class="modal__size-item">m</li>
       <li class="modal__size-item">l</li>
-    </ul>
-    <button class="button modal__button">Добавить</button>
+    </ul> -->
+
   </section>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/modal.js"></script>
   </body>
 </html>
