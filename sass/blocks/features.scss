@@ -2,6 +2,7 @@
   text-align: left;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 55px;
 }
 
 .features__title {
@@ -10,7 +11,6 @@
 
 .features__list {
   @include clear;
-  margin-bottom: 55px;
 }
 
 .features__item {
@@ -68,6 +68,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features__wrapper {
+    text-align: left;
+    @include container;
+    margin-bottom: 20px;
+  }
+
+  .features__title {
+    margin-bottom: 50px;
+  }
+
   .features__list {
     width: auto;
     display: flex;
@@ -76,6 +86,10 @@
 
   .features__item {
     width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 60px;
+
 
     &--price {
     order: 3;
@@ -91,6 +105,39 @@
     }
     &--packed {
     order: 6;
+    }
+  }
+
+  .features__icon {
+    margin-bottom: 12px;
+    margin-left: 5px;
+
+    &--eco {
+      margin-left: 5px;
+    }
+
+    &--price {
+      margin-bottom: 22px;
+      margin-left: 0;
+    }
+
+    &--likes {
+      margin-bottom: 18px;
+      margin-left: 5px;
+    }
+
+    &--knitting,
+    &--packed {
+      margin-left: 5px;
+    }
+
+    &--rocket {
+      margin-bottom: 22px;
+      margin-left: -5px;
+    }
+
+    &--packed {
+      margin-bottom: 14px;
     }
   }
 }

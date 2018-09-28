@@ -110,13 +110,14 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    @include container;
     display: flex;
     justify-content: space-between;
   }
   .page-footer__logo {
     display: block;
   }
-  .page-footer__wrapper {
-    display: flex;
-  }
+  // .page-footer__wrapper {
+  //   display: flex;
+  // }
 }

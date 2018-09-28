@@ -35,35 +35,48 @@
 
     background-color: lighten($dark, 95%);
   }
-  @media (min-width: $tablet-width) {
-    width: 515px;
-    // letter-spacing: 1px;
-    margin: 0 auto;
-    padding-top: 100px;
-    font-size: 43px;
-    line-height: 50px;
-
-  br {
-    display: none;
-  }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 640px;
-    padding-top: 130px;
-    font-size: 50px;
-    line-height: 57px;
-    font-family: "Open Sans Bold";
-  }
 }
-
 
 .page-main__title {
   @include clear;
 
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700;
-
+  font-weight: bold;
+  font-family: $font-bold;
   color: $dark;
 }
+
+  @media (min-width: $tablet-width) {
+    .page-main__main-title {
+    width: 768px;
+    height: 600px;
+    margin-top: -50px;
+    padding-top: 153px;
+    letter-spacing: 1px;
+    font-size: 43px;
+    line-height: 50px;
+
+    background-image: url("../img/hero-desktop.jpg");
+    // background-size: 748px 646px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+      br:nth-child(1) {
+        display: none;
+      }
+    }
+
+    .page-main__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+}
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    padding-top: 130px;
+    font-size: 50px;
+    line-height: 57px;
+
+  }

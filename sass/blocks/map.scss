@@ -2,3 +2,9 @@
   margin: 0 auto;
   margin-bottom: 37px;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    margin-bottom: 50px;
+  }
+}

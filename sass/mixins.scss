@@ -13,7 +13,7 @@
 
   font-size: 27px;
   line-height: 30px;
-  font-weight: bold;
+  font-family: $font-bold;
   text-align: center;
 
   color: $dark;
@@ -25,4 +25,10 @@
 @mixin container {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@mixin zigzag {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
 }

@@ -85,7 +85,7 @@
   }
 }
 
-// .form__input--modal-checkbox:focus + .form__label--modal-checkbox,
+.form__input--modal-checkbox:focus + .form__label--modal-checkbox,
 .form__input--modal-checkbox:checked + .form__label--modal-checkbox {
   box-shadow: inset 2px 2px 0 0 $tiffany,
     inset -2px -2px 0 0 $tiffany;

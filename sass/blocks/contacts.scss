@@ -24,6 +24,7 @@
 }
 
 .contacts__option {
+  padding: 0;
   padding-right: 27px;
   vertical-align: top;
 }
@@ -38,8 +39,40 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__options {
-    width: auto;
+  .contacts {
+    margin-bottom: 58px;
+  }
+  .contacts__wrapper {
+    @include container;
+    // padding-left: 40px;
+    margin-bottom: 0px;
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 31px;
+    padding-top: 20px;
+    top: 0;
+    right: 0;
+    background-image: url("../img/icon-flag.svg");
+    background-position: 621px 0px;
+    background-repeat: no-repeat;
+    background-size: 47px 81px;
+  }
+
+  .contacts__options tbody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    margin-top: -30px;
+    font-size: 17px;
+
+    tr {
+      width: 334px;
+    }
+  }
+  .contacts__field br:nth-child(2) {
+    display: none;
   }
   .map__picture {
     width: 768px;
