@@ -5,6 +5,27 @@
 
 @media (min-width: $tablet-width) {
   .map {
+    width: 768px;
     margin-bottom: 50px;
+    margin-left: -50px;
+  }
+
+  .map__picture {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    // width: 525px;
+    margin-bottom: 0;
+    margin-left: 0px;
+  }
+
+  .map__picture {
+    position: absolute;
+    top: -16%;
+    right: 50px;
+    width: 525px;
   }
 }

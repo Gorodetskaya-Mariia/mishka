@@ -19,8 +19,7 @@
   padding-right: auto;
   padding-bottom: 28px;
   padding-left: 75px;
-  // text-align: center;
-  // vertical-align: middle;
+
   letter-spacing: 1.4px;
 
   @include border;
@@ -71,7 +70,6 @@
   position: absolute;
   bottom: 34px;
   right: 30px;
-  border: 1px solid red;
 
   display: block;
   width: 20px;
@@ -150,6 +148,7 @@
   }
 
   .main-nav__list {
+    font-size: 16px;
     &--main {
       display: flex;
 
@@ -177,7 +176,6 @@
     padding-left: 0px;
     margin-right: 16px;
     border: 0;
-    // border-top: 1px solid $light-grey;
 
       &:nth-child(even) {
         margin-right: 0;
@@ -203,67 +201,62 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
-    // position: relative;
+    border-bottom: 1px solid $light-grey;
   }
 
   .main-nav__list {
-    &--main {
-      font-size: 16px;
-      padding-top: 15px;
-      padding-bottom: 28px;
-      // float: left;
-      // transform: none;
 
+    &--main {
+      width: 430px;
+      font-size: 16px;
+
+    li:nth-child(2n) {
+      border-left: 1px solid $light-grey;
+      padding-left: 35px;
+      padding-right: 0px;
+    }
     }
 
     &--user {
-      top: 5px;
-      left: 64.8%;
-
-
+      top: 0px;
+      left: 65.2%;
+      border: 0;
   }
     &--extra {
 
       display: flex;
       position: absolute;
-      top: 85px;
-      // left: -30px;
-      border-top: 1px solid red;
-      // left: 3%;
-      // transform: translateY(100%);
-      // display: block;
-      // width: 390px;
-      // font-size: 0;
+      top: 100px;
+      font-size: 14px;
     }
   }
 
   .main-nav__item {
     &--main {
-      margin-right: 50px;
-      padding-right: 0;
+      margin-right: 0px;
+      padding-top: 40px;
+      padding-right: 30px;
+      padding-bottom: 35px;
       letter-spacing: 1.2px;
-// border-left: 1px solid $light-grey;
-
-      // &:nth-child(odd) {
-      //   border: 0;
-      // }
-
-
     }
 
     &--extra {
       padding-top: 15px;
       padding-left: 0;
-      margin-right: 40px;
+      margin-right: 55px;
       border: 0;
       font-size: 14px;
-      // &:nth-child(odd) {
-      //   width: 184px;
-      // }
-  //
-  //     &:nth-child(even) {
-  //       padding-left: 35px;
-  //     }
+    }
+
+    &--user {
+      padding-top: 40px;
+      padding-bottom: 35px;
+      padding-left: 78px;
+    }
+    &--search {
+      padding-top: 45px;
+      padding-bottom: 30px;
+      padding-left: 64px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: 38px;
+  padding-right: 30px;
 
   font-size: 18px;
 }
@@ -11,9 +11,10 @@
 
 .contacts__wrapper {
   text-align: left;
-  padding-left: 30px;
-  padding-right: 30px;
+
   margin-bottom: 10px;
+  margin-bottom: 38px;
+  padding-left: 30px;
 }
 
 .contacts__options {
@@ -40,13 +41,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    @include container;
     margin-bottom: 58px;
   }
+
   .contacts__wrapper {
-    @include container;
-    // padding-left: 40px;
+    padding-left: 0;
     margin-bottom: 0px;
   }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -71,12 +74,11 @@
       width: 334px;
     }
   }
+
   .contacts__field br:nth-child(2) {
     display: none;
   }
-  .map__picture {
-    width: 768px;
-  }
+
   .contacts__button {
     width: 230px;
   }
@@ -88,23 +90,34 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    margin-left: 175px;
-  }
-  .contacts__options {
-    width: calc("50% - 64px");
+    margin-bottom: 105px;
   }
 
-  .map__picture {
-    position: absolute;
-    top: -40%;
-    right: 0;
-    width: 525px;
+  .contacts__wrapper {
+    margin-bottom: 40px;
   }
+
+  .contacts__title {
+    font-size: 50px;
+    line-height: 57px;
+    padding-top: 13px;
+    padding-left: 175px;
+    padding-bottom: 28px;
+    margin-bottom: 10px;
+    background-position: 65px 5px;
+  }
+
+  .contacts__options tbody {
+    flex-direction: column;
+    margin-left: 175px;
+    border-spacing: 0 13px;
+  }
+
   .contacts__button {
     width: 230px;
+    margin-left: 145px;
   }
   .contacts__write-us {
-    width: calc("50% - 64px");
     text-align: left;
   }
 }

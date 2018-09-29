@@ -2,8 +2,6 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  // padding-left: 30px;
-  // padding-right: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,7 +14,5 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1150px;
-    // padding-left: 50px;
-    // padding-right: 50px;
   }
 }

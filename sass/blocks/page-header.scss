@@ -4,6 +4,7 @@
 
   line-height: 24px;
   font-weight: 700;
+  font-family: $font-bold;
 
   color: $dark;
   background-color: $light;
@@ -66,23 +67,24 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header__logo {
     position: absolute;
-    top: -12px;
+    top: -3px;
     right: 40%;
     margin: 0;
     border: 0;
 
-    background-size: 149px auto;
+    background-size: 149px 72px;
 
     &--image {
       width: 149px;
       height: 72px;
+      margin-bottom: 0;
     }
   }
 
   .page-header__delivery {
-      left: 74.2%;
+    top: 115px;
+    left: 73.9%;
   }
 }

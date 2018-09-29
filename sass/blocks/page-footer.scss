@@ -120,4 +120,19 @@
   // .page-footer__wrapper {
   //   display: flex;
   // }
+  .page-footer__copyright {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .page-footer__social {
+
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .social__list {
+    padding-top: 55px;
+    padding-left: 75px;
+    padding-right: 0;
+    padding-bottom: 57px;
+  }
 }
