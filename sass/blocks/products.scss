@@ -118,6 +118,12 @@
   padding-right: 28px;
 }
 
+.product__image-wrapper {
+  @include image-wrapper;
+
+  height: 315px;
+}
+
 .product__picture {
   width: 260px;
   height: 315px;
@@ -149,10 +155,7 @@
   .products-type__header {
     margin-bottom: 35px;
 
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-position: 0 bottom;
-    background-repeat: no-repeat;
-    background-size: auto 24px;
+    @include zigzag-big;
       z-index: 200;
   }
   .products-type__list {
@@ -222,14 +225,20 @@
     margin-bottom: 57px;
   }
 
-  .product__picture {
+  .product__image-wrapper {
     position: absolute;
     top: 107px;
     right: 50px;
     width: 333px;
+    height: auto;
+  }
+
+  .product__picture {
+    width: 333px;
     height: 404px;
     margin: 0;
   }
+
   .product__price {
     width: 290px;
     font-size: 20px;
@@ -304,9 +313,14 @@
       display: none;
     }
   }
-  .product__picture {
+
+  .product__image-wrapper {
+    width: 525px;
     top: -50px;
     right: 50px;
+  }
+
+  .product__picture {
     width: 525px;
     height: 636px;
   }

@@ -13,7 +13,8 @@
 .page-header__logo {
   @include clear;
   @include border;
-
+  width: 86px;
+  margin: 0 auto;
   text-align: center;
   cursor: pointer;
 
@@ -21,7 +22,7 @@
     width: 86px;
     height: 35px;
     margin: 21px 0;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 
   &:hover,
   &:focus {
@@ -39,21 +40,25 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+  color: $text-grey;
 }
 
 @media (min-width: $tablet-width) {
 
   .page-header__logo {
     @include container;
-
+    width: 113px;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 113px auto;
+    margin-left: 0;
+    margin-right: auto;
     text-align: left;
 
     &--image {
       width: 113px;
       height: 46px;
+      margin-bottom: 21px;
     }
   }
 
@@ -61,7 +66,7 @@
       display: block;
       position: absolute;
       top: 105px;
-      left: 61%;
+      left: 630px;
       margin-left: auto;
   }
 }
@@ -72,6 +77,7 @@
     top: -3px;
     right: 40%;
     margin: 0;
+    width: 149px;
     border: 0;
 
     background-size: 149px 72px;
@@ -79,12 +85,12 @@
     &--image {
       width: 149px;
       height: 72px;
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
   }
 
   .page-header__delivery {
     top: 115px;
-    left: 73.9%;
+    left: 880px;
   }
 }
