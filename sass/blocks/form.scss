@@ -344,6 +344,16 @@
 
 .form__button {
   margin-bottom: 52px;
+
+  &:hover {
+    background-color: $text-grey;
+    color: $light;
+  }
+
+  &:active {
+    background-color: $text-grey;
+    color: rgb(117, 117, 117);
+  }
 }
 
 @media (min-width: $tablet-width) {

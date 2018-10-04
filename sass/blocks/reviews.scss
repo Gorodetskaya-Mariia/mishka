@@ -56,27 +56,34 @@
   margin-bottom: 40px;
 }
 
-.reviews__prev {
+.reviews__link {
   width: 50%;
   height: 50px;
   padding: 0;
 
-  background-image: url("../img/icon-left-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: $light;
   border: 1px solid $light-grey;
-}
 
-.reviews__next {
-  width: 50%;
-  height: 50px;
-  background-image: url("../img/icon-right-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid $light-grey;
-  background-color: $light;
-  border-left: none;
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    border-left: none;
+  }
+
+  &--prev:hover,
+  &--next:hover {
+   opacity: 0.6;
+  }
+
+  &--prev:active,
+  &--next:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -146,6 +153,16 @@
     top: 78px;
     right: 50px;
     padding-bottom: 13px;
+
+    &:hover {
+      background-color: $text-grey;
+      color: $light;
+    }
+
+    &:active {
+      background-color: $text-grey;
+      color: rgb(117, 117, 117);
+    }
   }
 }
 

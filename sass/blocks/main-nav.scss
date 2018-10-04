@@ -41,12 +41,14 @@
     &:focus {
       path {
       fill: $tiffany;
+      transition: 0.3s;
       }
     }
 
     &:active {
       path {
       opacity: 0.3;
+      transition: 0.3s;
       }
     }
   }
@@ -100,7 +102,7 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  top: -55px;
+  top: 20px;
   right: 25px;
 
   &::before,
@@ -137,7 +139,6 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    position: relative;
     width: auto;
     margin: 0;
     @include container;
@@ -160,7 +161,7 @@
       display: flex;
       text-align: right;
       position: absolute;
-      top: -85px;
+      top: 0;
       left: 48%;
 
       width: 390px;
@@ -169,13 +170,14 @@
 
 .main-nav__item {
   letter-spacing: 1.1px;
+  border: 0;
+
   &--main {
     padding-top: 15px;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 0px;
     margin-right: 16px;
-    border: 0;
 
       &:nth-child(even) {
         margin-right: 0;
@@ -183,7 +185,8 @@
   }
 
   &--user {
-    padding-bottom: 34px;
+    padding-top: 29px;
+    padding-bottom: 31px;
     border-left: 1px solid $light-grey;
   }
   &--search {

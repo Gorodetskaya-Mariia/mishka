@@ -21,7 +21,7 @@
 }
 
 @mixin border {
-  border-bottom: 1px solid $light-grey;
+  border-top: 1px solid $light-grey;
 }
 @mixin container {
   padding-left: 50px;

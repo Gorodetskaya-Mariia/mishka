@@ -13,6 +13,14 @@
 
   color: $dark;
   background-color: $light;
+
+  &:hover .catalog__item__wrapper {
+    box-shadow: 0 6px 10px 0 $dark-grey;
+  }
+
+  &:active .catalog__item__wrapper {
+    box-shadow: 0 3px 5px 0 $dark-grey;
+  }
 }
 
 .catalog__item__wrapper {
@@ -41,10 +49,21 @@
   line-height: 24px;
   font-weight: 700;
   font-family: $font-bold;
+  color: $dark;
 
   &--third {
     padding-top: 26px;
     margin-bottom: 7px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
@@ -83,11 +102,22 @@
   width: 20px;
   padding: 0;
 
-  background-image: url("../img/icon-cart.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: $light;
   border: 0;
+
+  &:hover {
+    path {
+    fill: $tiffany;
+    transition: 0.3s;
+    }
+  }
+
+  &:active {
+    path {
+    opacity: 0.3;
+    transition: 0.3s;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,18 +1,16 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-
   line-height: 24px;
   font-weight: 700;
   font-family: $font-bold;
-
+  letter-spacing: 0;
   color: $dark;
+
   background-color: $light;
 }
 
 .page-header__logo {
   @include clear;
-  @include border;
+  display: block;
   width: 86px;
   margin: 0 auto;
   text-align: center;
@@ -21,8 +19,8 @@
   &--image {
     width: 86px;
     height: 35px;
-    margin: 21px 0;
-    // margin-bottom: 15px;
+    margin: 21px auto;
+  }
 
   &:hover,
   &:focus {
@@ -32,11 +30,11 @@
   &:active {
     opacity: 0.3;
   }
-  }
 }
 
 .page-header__delivery {
   display: none;
+
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -46,14 +44,13 @@
 @media (min-width: $tablet-width) {
 
   .page-header__logo {
-    @include container;
     width: 113px;
+    margin-left: 0;
+    margin-right: auto;
+
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 113px auto;
-    margin-left: 0;
-    margin-right: auto;
-    text-align: left;
 
     &--image {
       width: 113px;
@@ -63,10 +60,11 @@
   }
 
   .page-header__delivery {
-      display: block;
+    display: block;
       position: absolute;
-      top: 105px;
-      left: 630px;
+      top: 106px;
+      left: 465px;
+
       margin-left: auto;
   }
 }
@@ -74,23 +72,22 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     position: absolute;
-    top: -3px;
-    right: 40%;
-    margin: 0;
+    top: 0;
+    right: 44%;
+    // margin: 0 auto;
     width: 149px;
-    border: 0;
 
     background-size: 149px 72px;
 
     &--image {
       width: 149px;
       height: 72px;
-      // margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
   .page-header__delivery {
     top: 115px;
-    left: 880px;
+    left: 850px;
   }
 }

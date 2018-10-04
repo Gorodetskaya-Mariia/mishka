@@ -33,6 +33,19 @@
 .contacts__field--active {
   border-bottom: 1px solid $tiffany;
 }
+.contacts__link {
+  @include clear;
+
+  &:hover {
+    color: $tiffany;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
 
 .contacts__write-us {
   padding-left: 30px;
@@ -81,7 +94,18 @@
 
   .contacts__button {
     width: 230px;
+
+    &:hover {
+      background-color: $text-grey;
+      color: $light;
+    }
+
+    &:active {
+      background-color: $text-grey;
+      color: rgb(117, 117, 117);
+    }
   }
+
   .contacts__write-us {
   text-align: center;
   }

@@ -16,30 +16,32 @@
 
 .products-type__item {
   @include clear;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 25px;
-  padding-bottom: 30px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   letter-spacing: 1.1px;
+}
 
+.products-type__link {
+  display: block;
+  color: $light;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   background-color: $tiffany;
 
   &--toys {
     background-color: #56c3b2;
   }
-}
 
-.products-type__link {
-  color: $light;
-  position: relative;
   &::after {
     position: absolute;
     content: "";
-    top: 0px;
-    left: 216px;
+    top: 20px;
+    left: 245px;
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -56,12 +58,25 @@
   }
 
   &--toys::after {
-    top: -5px;
-    left: 205px;
+    // top: -5px;
+    left: 235px;
     width: 60px;
     height: 60px;
     opacity: 0.5;
     background-image: url("../img/icon-toy.svg");
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+  &--toys:hover {
+    background-color: #46c1ae;
   }
 }
 
@@ -100,7 +115,7 @@
   margin-bottom: 28px;
   border-collapse: collapse;
   tr {
-    @include border;
+    border-bottom: 1px solid $light-grey;
   }
 }
 
@@ -145,6 +160,16 @@
 
 .product__order {
   margin-bottom: 40px;
+
+  &:hover {
+    background-color: $text-grey;
+    color: $light;
+  }
+
+  &:active {
+    background-color: $text-grey;
+    color: rgb(117, 117, 117);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -155,39 +180,46 @@
   .products-type__header {
     margin-bottom: 35px;
 
-    @include zigzag-big;
-      z-index: 200;
+
   }
   .products-type__list {
     @include container;
     flex-direction: row;
     margin-top: -128px;
-
+    @include zigzag-big;
+    z-index: 400;
   }
   .products-type__item {
 
     width: 334px;
-    padding-left: 33px;
-    padding-top: 31px;
-    padding-bottom: 40px;
 
     font-size: 20px;
     line-height: 30px;
 
-    // background-image: url("../img/bg-zigzag-fill.svg");
-    // background-position: 0 bottom;
-    // background-repeat: no-repeat;
-    // background-size: auto 24px;
   }
 
   .products-type__link {
+    padding-left: 33px;
+    padding-top: 31px;
+    padding-bottom: 40px;
+    @include zigzag-big;
+    z-index: 100px;
 
     &::after {
-      left: 220px;
-  }
+      top: 30px;
+      left: 260px;
+    }
+
     &--toys::after {
-      left: 200px;
-  }
+      top: 35px;
+      left: 240px;
+    }
+
+    &:hover {
+      padding-top: 34px;
+      padding-bottom: 42px;
+      transition: 0.3s;
+    }
 }
 
   .product__wrapper {

@@ -8,12 +8,24 @@
   color: $dark;
   background-color: $light;
   border: 1px solid $light-grey;
+
+  &:hover .video__wrapper {
+    box-shadow: 0 6px 10px 0 $dark-grey;
+  }
+
+  &:active .video__wrapper {
+    box-shadow: 0 3px 5px 0 $dark-grey;
+  }
+
+
 }
 
 .video__play--wrapper {
   @include image-wrapper;
 
   height: 150px;
+
+
 }
 
 .video__title {
@@ -27,6 +39,7 @@
   line-height: 24px;
   font-weight: 700;
   font-family: $font-bold;
+  color: $dark;
 
   background-image: url("../img/icon-video.svg");
   background-position: 30px 5px;
@@ -41,6 +54,25 @@
   margin-bottom: 6px;
 
   background-color: rba(241, 241, 241);
+
+  &::before {
+    top: 50%;
+    left: 50%;
+    width: 102px;
+    height: 78px;
+    transform: translate(-50%, -50%);
+    background: url("../img/icon-play.svg") no-repeat;
+    z-index: 100;
+  }
+
+  &:hover::before{
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+
+  &:active::before{
+    transform: scale(0.8) translate(-60%, -60%);
+    opacity: 0.3;
+  }
 }
 
 .video__description {
@@ -57,6 +89,16 @@
   width: 190px;
   margin-left: 33px;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: $text-grey;
+    color: $light;
+  }
+
+  &:active {
+    background-color: $text-grey;
+    color: rgb(117, 117, 117);
+  }
 }
 
 @media (min-width: $tablet-width) {
