@@ -19,6 +19,7 @@
 
   letter-spacing: 1.1px;
   color: $dark;
+
   background-color: $light;
 
   &--price {
@@ -64,6 +65,7 @@
 
 .features__description {
   @include clear;
+
   font-weight: 700;
 }
 
@@ -86,23 +88,27 @@
 
   .features__item {
     width: 334px;
-    font-size: 20px;
-    line-height: 22px;
     margin-bottom: 60px;
 
+    font-size: 20px;
+    line-height: 22px;
 
     &--price {
     order: 3;
     }
+
     &--likes {
     order: 5;
     }
+
     &--knitting {
     order: 2;
     }
+
     &--rocket {
     order: 4;
     }
+
     &--packed {
     order: 6;
     }

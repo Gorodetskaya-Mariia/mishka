@@ -1,5 +1,6 @@
 .contacts {
   padding-right: 30px;
+  margin-bottom: 58px;
 
   font-size: 18px;
 }
@@ -18,10 +19,11 @@
 }
 
 .contacts__options {
-  border-collapse: separate;
-  border-spacing: 0 25px;
   font-size: 15px;
   line-height: 30px;
+
+  border-collapse: separate;
+  border-spacing: 0 25px;
 }
 
 .contacts__option {
@@ -38,12 +40,14 @@
 
   &:hover {
     color: $tiffany;
-    transition: 0.3s;
+
+    transition: 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: 0.3s;
+
+    transition: 0.2s;
   }
 }
 
@@ -64,12 +68,15 @@
   }
 
   .contacts__title {
-    font-size: 43px;
-    line-height: 50px;
-    padding-bottom: 31px;
-    padding-top: 20px;
     top: 0;
     right: 0;
+
+    padding-bottom: 31px;
+    padding-top: 20px;
+
+    font-size: 43px;
+    line-height: 50px;
+
     background-image: url("../img/icon-flag.svg");
     background-position: 621px 0px;
     background-repeat: no-repeat;
@@ -81,6 +88,7 @@
     flex-wrap: wrap;
     width: 668px;
     margin-top: -30px;
+
     font-size: 17px;
 
     tr {
@@ -96,24 +104,27 @@
     width: 230px;
 
     &:hover {
-      background-color: $text-grey;
       color: $light;
+
+      background-color: $text-grey;
     }
 
     &:active {
-      background-color: $text-grey;
       color: rgb(117, 117, 117);
+
+      background-color: $text-grey;
     }
   }
 
   .contacts__write-us {
-  text-align: center;
+    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+
     margin-bottom: 105px;
   }
 
@@ -122,18 +133,21 @@
   }
 
   .contacts__title {
-    font-size: 50px;
-    line-height: 57px;
     padding-top: 13px;
     padding-left: 175px;
     padding-bottom: 28px;
     margin-bottom: 10px;
+
+    font-size: 50px;
+    line-height: 57px;
+
     background-position: 65px 5px;
   }
 
   .contacts__options tbody {
     flex-direction: column;
     margin-left: 175px;
+
     border-spacing: 0 13px;
   }
 

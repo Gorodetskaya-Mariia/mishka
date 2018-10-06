@@ -35,8 +35,9 @@
 .catalog__image {
   width: 260px;
   height: 195px;
-  background-color: rba(241, 241, 241);
   margin-bottom: 22px;
+
+  background-color: rba(241, 241, 241);
 }
 
 .catalog__title {
@@ -58,12 +59,14 @@
 
   &:hover {
     opacity: 0.6;
-    transition: 0.3s;
+
+    transition: 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: 0.3s;
+
+    transition: 0.2s;
   }
 }
 
@@ -87,6 +90,7 @@
 .catalog__to-buy {
   display: flex;
   justify-content: space-between;
+
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 28px;
@@ -108,14 +112,16 @@
   &:hover {
     path {
     fill: $tiffany;
-    transition: 0.3s;
+
+    transition: 0.2s;
     }
   }
 
   &:active {
     path {
     opacity: 0.3;
-    transition: 0.3s;
+
+    transition: 0.2s;
     }
   }
 }
@@ -144,6 +150,7 @@
   .catalog__title {
     padding: 0;
     padding-top: 25px;
+
     font-size: 18px;
   }
 
@@ -172,7 +179,6 @@
     @include clear;
     width: 334px;
     height: 334px;
-
     margin-bottom: 0;
   }
 
