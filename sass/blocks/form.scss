@@ -15,6 +15,8 @@
 }
 
 .form__field-wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -38,32 +40,6 @@
     text-transform: uppercase;
     color: $tiffany;
 
-    // &--phone::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 32px;
-    //   right: 2%;
-    //
-    //   width: 25px;
-    //   height: 25px;
-    //
-    //   background: url("../img/icon-phone.svg") no-repeat;
-    //   background-size: 25px 25px;
-    // }
-    //
-    // &--email::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 32px;
-    //   right: 2%;
-    //
-    //   width: 32px;
-    //   height: 32px;
-    //
-    //   background: url("../img/icon-mail.svg") no-repeat;
-    //   background-size: 32px 32px;
-    // }
-
     &--type {
       margin-bottom: 32px;
     }
@@ -73,11 +49,13 @@
     }
 
     &--additional {
-    margin-bottom: 23px;
+      margin-bottom: 23px;
     }
 
     &--phone,
     &--email {
+      position: relative;
+
       margin-bottom: 24px;
     }
 
@@ -120,10 +98,11 @@
         content: "";
         width: 50px;
         height: 1px;
+        margin-left: 28px;
+
         align-items: flex-end;
         flex-grow: 1;
         flex-shrink: 0;
-        margin-left: 28px;
 
         background-color: $tiffany;
       }
@@ -182,13 +161,13 @@
   &--radio:hover::before {
     border-color: $tiffany;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   &--radio:active::before {
     border-color: #c7c7c7;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   &--checkbox::before {
@@ -206,13 +185,13 @@
   &--checkbox:hover::before {
     border-color: $tiffany;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   &--checkbox:active::before {
     border-color: #c7c7c7;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 }
 
@@ -226,15 +205,15 @@
     content: "";
     position: absolute;
     top: 11px;
-    left: -49px
-    ;
+    left: -49px;
+
     width: 16px;
     height: 16px;
 
     border-radius: 50%;
     background-color: $tiffany;
 
-    transition: 0.3s;
+    transition: 0.2s;
     transform: translateY(-50%);
   }
 
@@ -251,18 +230,10 @@
     background-size: 22px 22px;
 
     transform: translateY(-50%);
-    transition: 0.3s;
+    transition: 0.2s;
   }
 }
-.form__input-client-data:hover ~ .form__field-title--phone::before path
-// .form__input:focus ~ .form__input-icon path
-{
-  fill: #62d1ba;
-}
-// .form__input:hover ~ .form__input-icon path,
-// .form__input:focus ~ .form__input-icon path {
-//   fill: #62d1ba;
-// }
+
 .form__input-client-data {
   width: 260px;
   margin-bottom: 24px;
@@ -278,7 +249,7 @@
 
     border-color: $tiffany;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   &::placeholder {
@@ -290,11 +261,13 @@
 
 .form__input-client-data-icon {
   position: absolute;
-  top: 1350px;
-  left: 430px;;
+  content: "";
+  top: 35px;
+  left: 225px;
+
   &--email {
-    top: 1455px;
-    left: 425px;
+    top: 35px;
+    left: 220px;
   }
 }
 
@@ -329,7 +302,7 @@
   &:active {
     border-color: $tiffany;
 
-    transition: 0.3s;
+    transition: 0.2s;
   }
 }
 
@@ -348,11 +321,15 @@
   &:hover {
     background-color: $text-grey;
     color: $light;
+
+    transition: 0.2s;
   }
 
   &:active {
     background-color: $text-grey;
     color: rgb(117, 117, 117);
+
+    transition: 0.2s;
   }
 }
 
@@ -391,21 +368,14 @@
   .form__field-title {
       width: 167px;
       margin-right: 0;
-    &--phone {
-      margin-bottom: 20px;
-    }
+
+      &--phone {
+        margin-bottom: 20px;
+      }
   }
 
   .form__field {
     flex-direction: row;
-
-    .form__field-title {
-      &--phone::before,
-      &--email::before {
-        top: -5px;
-        left: 615px;
-      }
-    }
 
     &--type {
       @include container;
@@ -523,14 +493,16 @@
     }
 
     &::placeholder {
-    font-size: 19px;
+      font-size: 19px;
     }
   }
 
   .form__input-client-data-icon {
-    left: 730px;;
+    top: 0;
+    left: 620px;
+
     &--email {
-      left: 725px;
+      left: 615px;
     }
   }
 
@@ -616,11 +588,11 @@
   }
 
   .form__input-client-data-icon {
-    top: 1370px;
-    left: 930px;
+    top: 0;
+    left: 780px;
+
     &--email {
-      top: 1435px;
-      left: 925px;
+      left: 775px;
     }
   }
 

@@ -44,7 +44,8 @@
     margin-left: 0;
   }
 
-  &--likes {
+  &--likes,
+  &--packed {
     margin-bottom: 18px;
   }
 
@@ -56,10 +57,6 @@
   &--rocket {
     margin-bottom: 22px;
     margin-left: 3px;
-  }
-
-  &--packed {
-    margin-bottom: 18px;
   }
 }
 
@@ -94,23 +91,23 @@
     line-height: 22px;
 
     &--price {
-    order: 3;
+      order: 3;
     }
 
     &--likes {
-    order: 5;
+      order: 5;
     }
 
     &--knitting {
-    order: 2;
+      order: 2;
     }
 
     &--rocket {
-    order: 4;
+      order: 4;
     }
 
     &--packed {
-    order: 6;
+      order: 6;
     }
   }
 
@@ -147,6 +144,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .features {
     margin-left: 175px;
@@ -160,19 +158,23 @@
     width: 350px;
 
     &--price {
-    order: 3;
+      order: 3;
     }
+
     &--likes {
-    order: 5;
+      order: 5;
     }
+
     &--knitting {
-    order: 2;
+      order: 2;
     }
+
     &--rocket {
-    order: 4;
+      order: 4;
     }
+
     &--packed {
-    order: 6;
+      order: 6;
     }
   }
 }

@@ -14,21 +14,27 @@
   width: 86px;
   margin: 0 auto;
   text-align: center;
+
   cursor: pointer;
 
   &--image {
     width: 86px;
     height: 35px;
     margin: 21px auto;
+    margin-bottom: 15px;
   }
 
   &:hover,
   &:focus {
     opacity: 0.6;
+
+    transition: 0.2s;
   }
 
   &:active {
     opacity: 0.3;
+
+    transition: 0.2s;
   }
 }
 
@@ -60,12 +66,12 @@
   }
 
   .page-header__delivery {
-    display: block;
-      position: absolute;
-      top: 106px;
-      left: 465px;
+    position: absolute;
+    top: 106px;
+    left: 465px;
 
-      margin-left: auto;
+    display: block;
+    margin-left: auto;
   }
 }
 
@@ -74,7 +80,7 @@
     position: absolute;
     top: 0;
     right: 44%;
-    // margin: 0 auto;
+
     width: 149px;
 
     background-size: 149px 72px;

@@ -93,8 +93,8 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "html",
-   "images",
-    "webp",
+   //"images",
+    //"webp",
     done
   );
 });

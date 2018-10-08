@@ -1,8 +1,15 @@
+.reviews {
+  margin-bottom: 33px;
+}
+
 .reviews__wrapper {
   text-align: left;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 38px;
+  padding-bottom: 7px;
+
+  @include zigzag;
+  background-size: auto 6px;
 }
 
 .reviews__title {
@@ -19,6 +26,7 @@
   margin-bottom: 27px;
 
   color: $text-grey;
+
   background-color: $light;
 }
 
@@ -43,6 +51,7 @@
 .reviews__author-user-name {
   display: block;
   margin-bottom: 32px;
+
   line-height: 30px;
   font-weight: 400;
 }
@@ -52,7 +61,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   margin-bottom: 40px;
 }
 
@@ -77,12 +85,16 @@
 
   &--prev:hover,
   &--next:hover {
-   opacity: 0.6;
+    opacity: 0.6;
+
+    transition: 0.2s;
   }
 
   &--prev:active,
   &--next:active {
     opacity: 0.3;
+
+    transition: 0.2s;
   }
 }
 
@@ -90,6 +102,7 @@
 
   .reviews {
     position: relative;
+
     margin-bottom: 44px;
 
     background-image: rgb(243, 243, 243) url("../img/review@1x.jpg");
@@ -104,9 +117,9 @@
 
   .reviews__wrapper {
     @include container;
-    @include zigzag;
     padding-bottom: 55px;
 
+    @include zigzag;
     background-size: auto 17px;
   }
 
@@ -124,21 +137,25 @@
   .reviews__item {
     width: 750px;
     margin-bottom: 37px;
+
     letter-spacing: 1.1px;
     font-size: 16px;
     line-height: 30px;
+
     background-color: transparent;
   }
 
   .reviews__author-name {
-    letter-spacing: 1.2px;
     margin-bottom: 3px;
+
+    letter-spacing: 1.2px;
   }
 
   .reviews__links {
     position: absolute;
     bottom: 95px;
     right: 53px;
+
     width: 167px;
   }
 
@@ -152,31 +169,39 @@
     width: 174px;
     top: 78px;
     right: 50px;
+
     padding-bottom: 13px;
 
     &:hover {
-      background-color: $text-grey;
       color: $light;
+
+      background-color: $text-grey;
+
+      transition: 0.2s;
     }
 
     &:active {
-      background-color: $text-grey;
       color: rgb(117, 117, 117);
+
+      background-color: $text-grey;
+
+      transition: 0.2s;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    background-position: 50px 0;
-
     margin-bottom: 130px;
+
+    background-position: 50px 0;
   }
 
   .reviews__wrapper {
     @include container;
     padding-left: 225px;
     padding-bottom: 105px;
+
     background-size: auto 23px;
   }
 
@@ -189,8 +214,9 @@
   }
 
   .reviews__item {
-    letter-spacing: 0.9px;
     margin-bottom: 0px;
+
+    letter-spacing: 0.9px;
   }
 
   .reviews__links {
