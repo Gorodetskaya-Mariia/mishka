@@ -1,5 +1,6 @@
 .page-main__main-title {
   @include title;
+
   width: 320px;
   height: 323px;
   padding-bottom: 0;
@@ -76,16 +77,11 @@
       font-size: 40px;
 
       background-image: none;
-    }
-
-    &--main,
-    &--catalog,
-    &--form {
 
       &::after {
         position: absolute;
         content:"";
-        top: 835px;
+        top: 305px;
         left: 0;
         z-index: 100;
 
@@ -94,13 +90,6 @@
 
         background: url("../img/bg-zigzag-fill.svg");
         background-size: auto 26px;
-      }
-    }
-
-    &--catalog,
-    &--form {
-      &::after {
-        top: 305px;
       }
     }
 
@@ -133,27 +122,17 @@
     &--form {
       padding-bottom: 115px;
       margin-bottom: 115px;
+
+      &::after {
+        background-size: auto 34px;
+        top: 345px;
+      }
     }
 
     &--form {
       margin-bottom: 108px;
     }
-
-    &--main,
-    &--catalog,
-    &--form  {
-      &::after {
-        background-size: auto 34px;
-      }
-    }
-
-    &--catalog,
-    &--form {
-      &::after {
-        top: 345px;
-      }
-    }
-  }
+}
 
   .page-main__title {
     font-size: 50px;

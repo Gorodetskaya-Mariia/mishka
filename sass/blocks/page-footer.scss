@@ -43,6 +43,7 @@
 .social__link {
   @include clear;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   height: 28px;
 

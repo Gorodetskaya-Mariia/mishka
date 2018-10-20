@@ -159,6 +159,7 @@
     font-size: 16px;
     &--main {
       display: flex;
+      flex-wrap: wrap;
       width: 390px;
 
       font-size: 15px;
@@ -170,6 +171,7 @@
       left: 48%;
 
       display: flex;
+      flex-wrap: wrap;
       text-align: right;
       width: 390px;
     }
@@ -248,6 +250,8 @@
       top: 100px;
 
       display: flex;
+      flex-wrap: wrap;
+      width: 390px;
 
       font-size: 14px;
     }
