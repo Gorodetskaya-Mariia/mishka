@@ -1,5 +1,6 @@
-проект «Мишка»
-
+Проект «Mishka»
+---
+mixins   PostCss   BEM   Responsive Web Design   
 ---
 
 **Обратите внимание на файлы:**
