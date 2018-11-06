@@ -1,8 +1,10 @@
 Проект «Mishka»
 ---
-HTML5   CSS3   mixins   PostCss   BEM   Responsive Web Design   Sass   Gulp   Flexbox
+HTML5   CSS3   mixins   PostCss   BEM   Responsive Web Design   Sass   Gulp   Flexbox  Валидация формы
 ---
-
+Реализованы три страницы: главная, страница каталога, страница с формой.
+Иконка корзины на странице каталога вызывает появление модального окна.
+Блок карты — интерактивная карта (карты Google).
 **Обратите внимание на файлы:**
 
 - [Specification.md](Specification.md) — техническое задание для проекта.
