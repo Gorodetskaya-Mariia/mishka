@@ -1,6 +1,6 @@
 Проект «Mishka»
 ---
-mixins   PostCss   BEM   Responsive Web Design   
+HTML5   CSS3   mixins   PostCss   BEM   Responsive Web Design   Sass   Gulp   Flexbox
 ---
 
 **Обратите внимание на файлы:**
