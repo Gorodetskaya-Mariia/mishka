@@ -29,4 +29,4 @@
 - A map in contacts section on main page is an interactive Google Map.
 
 
-> Specification.md — terms of reference for the project
+> [Specification.md](Specification.md) — техническое задание для проекта.
