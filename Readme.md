@@ -15,18 +15,18 @@
 > [Custom knitting](https://gorodetskaya-mariia.github.io/Mishka/form.html)<br> 
 
 ### Project overview:
-	* You can find a modal window to choose a size of products by clicking on button "Order"
+- You can find a modal window to choose a size of products by clicking on button "Order"
 	on main page.
-	* Css Animations were used for a beatifull animation not only buttons, but also backgrounds
+- Css Animations were used for a beatifull animation not only buttons, but also backgrounds
 	of titles on every page and a mobile menu.
-	* SVG Animations were used to animate a button for openning and closing a mobile menu.
-	* I chose a library Swiper to realize a slider of reviews (section "Reviews" on main page).
-	* Responsive Web Design is achieved through flexboxes and media expressions. 
-	* Every image is a responsive image — image that works well on devices with widely differing
+- SVG Animations were used to animate a button for openning and closing a mobile menu.
+- I chose a library Swiper to realize a slider of reviews (section "Reviews" on main page).
+- Responsive Web Design is achieved through flexboxes and media expressions. 
+- Every image is a responsive image — image that works well on devices with widely differing
 	screen sizes and resolutions. This way the browser can choose the image that best fits
 	the current view and/or device. I used <picture> element to add more flexibility when 
 	specifying image resources. 
-  * A map in contacts section on main page is an interactive Google Map.
+- A map in contacts section on main page is an interactive Google Map.
 
 
 > Specification.md — terms of reference for the project
