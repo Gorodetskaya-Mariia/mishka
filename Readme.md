@@ -26,6 +26,7 @@
 	screen sizes and resolutions. This way the browser can choose the image that best fits
 	the current view and/or device. I used <picture> element to add more flexibility when 
 	specifying image resources. 
-	
+  * A map in contacts section on main page is an interactive Google Map.
+
 
 > Specification.md — terms of reference for the project
