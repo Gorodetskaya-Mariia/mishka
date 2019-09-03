@@ -6,7 +6,9 @@
 	* Sass (mixins, nesting, variables)
 	* Various PostCSS plugins
 	* BEM methodology
+	* CSS and SVG Animations
 	* Responsive Web Design approach
+	* CSS Flexbox Layout
 
 ## What is done:
 ### Pages implemented:
@@ -17,16 +19,12 @@
 ### Project overview:
 - You can find a modal window to choose a size of products by clicking on button "Order"
 	on main page.
-- Css Animations were used for a beatifull animation not only buttons, but also backgrounds
-	of titles on every page and a mobile menu.
-- SVG Animations were used to animate a button for openning and closing a mobile menu.
+- CSS Animations were used for beautiful animations not only of buttons, but also backgrounds of titles on every page and a mobile menu.
+- Swiper.js library was chosen to implement a slider of reviews (section «Reviews» on main page).
 - I chose a library Swiper to realize a slider of reviews (section "Reviews" on main page).
-- Responsive Web Design is achieved through flexboxes and media expressions. 
-- Every image is a responsive image — image that works well on devices with widely differing
-	screen sizes and resolutions. This way the browser can choose the image that best fits
-	the current view and/or device. I used <picture> element to add more flexibility when 
-	specifying image resources. 
+- Responsive Web Design is achieved through flexboxes and media expressions. Every image is a responsive image — image that works well on devices with widely differing screen sizes and resolutions. This way the browser can choose the image that best fits the current view and device. I used tag «picture» to add more flexibility when specifying image resources. 
+- About Gulp taskrunner: A local Browsersync server with auto-refresh is used for developing process. Gulp is subscribed to changes in *.js / *.sass / *.html files and if any of them changes, it launches pipe tasks that perform optimizations, transpile from .sass to .css, minify and concatenate scripts and style sheets. In the prod .css styles, the necessary vendor prefixes are automatically applied. 
 - A map in contacts section on main page is an interactive Google Map.
 
 
-> [Specification.md](Specification.md) — техническое задание для проекта.
+> [Specification.md](Specification.md) — project specification.
