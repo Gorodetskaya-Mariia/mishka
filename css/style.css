@@ -171,7 +171,7 @@ a {
       margin-bottom: 0; }
   .page-header__delivery {
     top: 115px;
-    left: 850px; } }
+    left: 785px; } }
 
 .main-nav {
   position: relative;
@@ -385,6 +385,10 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid #ededed; }
+  .page-main__main-title span {
+    width: 92%;
+    display: block;
+    margin: 0 auto; }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__main-title {
       background-image: url("../img/hero-mobile@2x.jpg"); } }
@@ -421,7 +425,9 @@ a {
     letter-spacing: 1px;
     font-size: 43px;
     line-height: 50px;
-    background-image: url("../img/hero-desktop.jpg"); } }
+    background-image: url("../img/hero-desktop.jpg"); }
+    .page-main__main-title span {
+      width: 50%; } }
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-main__main-title {
       background-image: url("../img/hero-desktop@2x.jpg"); } }
@@ -461,6 +467,8 @@ a {
     margin-top: 0px;
     font-size: 50px;
     line-height: 57px; }
+    .page-main__main-title span {
+      width: 47%; }
     .page-main__main-title--catalog, .page-main__main-title--form {
       padding-bottom: 115px;
       margin-bottom: 115px; }
@@ -500,12 +508,14 @@ a {
 .products-type__link {
   position: relative;
   display: block;
-  padding-left: 30px;
+  padding-left: 15px;
   padding-right: 30px;
   padding-top: 25px;
   padding-bottom: 30px;
   color: #ffffff;
-  background-color: #63d1bb; }
+  background-color: #63d1bb;
+  min-height: 57px;
+  line-height: 57px; }
   .products-type__link--toys {
     background-color: #56c3b2; }
   .products-type__link::after {
@@ -540,7 +550,10 @@ a {
   .products-type__link--toys:hover {
     background-color: #46c1ae;
     transition: 0.2s; }
-
+    @media (max-width: 767px) {
+      .products-type__link {
+        min-height: 40px;
+        line-height: 40px; } }
 .product__wrapper {
   margin-bottom: 28px;
   padding-left: 30px;
@@ -643,7 +656,7 @@ a {
     font-size: 20px;
     line-height: 30px; }
   .products-type__link {
-    padding-left: 33px;
+    padding-left: 15px;
     padding-top: 31px;
     padding-bottom: 40px; }
     .products-type__link::after {
@@ -675,12 +688,12 @@ a {
   .product__wrapper--title {
     margin-bottom: 45px; }
   .product__intro {
-    width: calc("50% - 44px");
+    width: calc(50% - 44px);
     margin-bottom: 35px;
     font-size: 16px;
     line-height: 30px; }
   .product__options {
-    width: calc("50% - 44px");
+    width: calc(50% - 44px);
     margin-bottom: 57px; }
   .product__image-wrapper {
     position: absolute;
@@ -715,6 +728,8 @@ a {
     margin-top: -128px; }
   .products-type__item {
     width: 525px; }
+  .products-type__link {
+    padding-left: 33px; }
   .products-type__link::after {
     left: 415px; }
   .products-type__link--toys::after {
@@ -859,7 +874,7 @@ a {
   .features__wrapper {
     margin-bottom: 25px; }
   .features__item {
-    width: 350px; }
+    width: 340px; }
     .features__item--price {
       order: 3; }
     .features__item--likes {
@@ -2168,4 +2183,39 @@ a {
 @-webkit-keyframes slide {
   from { background-position: 0 0; }
   to { background-position: -400px 0; }
+}
+
+#langlinks {
+  position: absolute;
+  top: 27px;
+  right: 75%;
+}
+
+#langlinks a {
+  display: none;
+}
+
+#langlinks a.targetlang {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #63d1bb;
+}
+
+#lingumania_langswitcher {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #langlinks {
+    top: 135px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 1150px) {
+  #langlinks {
+    top: 115px;
+  }
 }
