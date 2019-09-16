@@ -63,13 +63,13 @@
               </li>
             </ul>
           <span class="page-header__delivery">Бесплатная доставка по России</span>
+          <div id="langlinks"></div>
       </nav>
     </header>
     <main class="page-main container">
       <h1 class="page-main__main-title page-main__main-title--form">Вязание на заказ</h1>
       <form class="form container" method="get" action="https://echo.htmlacademy.ru">
-        <p class="form__intoduction">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
-          и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form__intoduction">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__field form__field--type">
           <div class="form__field-wrapper">
           <h2 class="form__field-title form__field-title--type">Тип</h2>
@@ -129,26 +129,26 @@
           <h2 class="form__field-title form__field-title--client-data">ФИО</h2>
           <div class="form__list form__list--client-data">
             <div class="form__field-wrapper">
-              <label class="form__label form__label--client-data" for="order-name">Имя:</label>
+              <label class="form__label form__label--client-data" for="order-name">Имя<sup>*</sup>:</label>
               <input class="form__input-client-data" id="order-name" type="text" name="userName"
-                placeholder="Введите ваше имя*" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+                pattern="^[A-Za-zА-Яа-яЁё]+$" required>
             </div>
             <div class="form__field-wrapper">
-              <label class="form__label form__label--client-data" for="order-surname">Фамилия:</label>
+              <label class="form__label form__label--client-data" for="order-surname">Фамилия<sup>*</sup>:</label>
               <input class="form__input-client-data" id="order-surname" type="text" name="userSurname"
-                placeholder="Укажите фамилию*" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+                pattern="^[A-Za-zА-Яа-яЁё]+$" required>
             </div>
             <div class="form__field-wrapper">
               <label class="form__label form__label--client-data" for="order-middle-name">Отчество:</label>
               <input class="form__input-client-data" id="order-middle-name" type="text" name="userMiddlename"
-                placeholder="Отчество, если желаете" pattern="^[A-Za-zА-Яа-яЁё]+$">
+                pattern="^[A-Za-zА-Яа-яЁё]+$">
             </div>
           </div>
       </div>
       </fieldset>
       <fieldset class="form__field form__field--phone">
         <div class="form__field-wrapper">
-          <label class="form__field-title form__field-title--phone" for="order-phone">Тел</label>
+          <label class="form__field-title form__field-title--phone" for="order-phone">Тел<sup>*</sup></label>
           <input class="form__input-client-data form__input-client-data--phone" id="order-phone" type="tel" name="userPhone" minlength="10" maxlength="11"
           placeholder="+7 XXX XXХ ХХ XX*" required>
           <svg class="form__input-client-data-icon form__input-client-data-icon--phone" version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
@@ -167,22 +167,23 @@
       </fieldset>
       <fieldset class="form__field form__field--email">
         <div class="form__field-wrapper">
-          <label class="form__field-title form__field-title--email" for="order-email">E-mail</label>
+          <label class="form__field-title form__field-title--email" for="order-email">E-mail<sup>*</sup></label>
           <input class="form__input-client-data form__input-client-data--email" id="order-email" type="email" name="userEmail"
-            placeholder="Ваш E-mail*" required>
+            required>
           <svg class="form__input-client-data-icon form__input-client-data-icon--email" version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
             <path id="mail" fill="#cccccc" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
           </svg>
         </div>
       </fieldset>
       <fieldset class="form__field form__field--additional">
+        <p>Опишите все ваши пожелания к заказу</p>
         <div class="form__field-wrapper">
           <label class="form__field-title form__field-title--additional" for="order-message">Доп</label>
-          <textarea class="form__message" id="order-message" name="user-message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form__message" id="order-message" name="user-message"></textarea>
         </div>
       </fieldset>
       <div class="form__wrapper">
-        <b class="form__comment">*Поля обязательны для заполнения</b>
+        <p class="form__comment"><sup>*</sup>Поля обязательны для заполнения</p>
         <button class="button form__button" type="submit" >Отправить заказ</button>
       </div>
     </form>
@@ -247,7 +248,9 @@
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
   </footer>
-  <script src="js/mobile-menu.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/page-translations.js"></script>
+  <script src="js/libs/lingumania.min.js"></script>
   </body>
   </html>

@@ -168,7 +168,7 @@ var linguJSON = {
       },
       {
         "source": "г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101",
-        "target": "St. Petersburg, Nevskaya street, 19/8, office 101"
+        "target": "St. Petersburg, Bolshaya Konyushennaya Street, 19/8, office 101"
       },
       {
         "source": "Как нас найти",
@@ -206,6 +206,152 @@ var linguJSON = {
         "source": "Выберите размер:",
         "target": "Choose size:"
       },
+      {
+        "source": "Добавить",
+        "target": "Add"
+      },
+      //catalog page
+      {
+          "source": "Каталог товаров",
+          "target": "Catalog"
+      },
+      {
+          "source": "Зайчик-попрыгайчик",
+          "target": "Bunny"
+      },
+      {
+          "source": "Рост 30 см, вес 200 г",
+          "target": "Height 30 cm, weight 200 gr"
+      },
+      {
+          "source": "1 200 руб.",
+          "target": "1 200 RUB"
+      },
+      {
+          "source": "Заказать",
+          "target": "Order"
+      },
+      {
+          "source": "Корзина для белья",
+          "target": "Laundry basket"
+      },
+      {
+          "source": "Диаметр 15 см, высота 10 см",
+          "target": "Diameter 15 cm, height 10 cm"
+      },
+      {
+          "source": "1 500 руб.",
+          "target": "1 500 RUB"
+      },
+      {
+          "source": "Большая корзинка для игрушек",
+          "target": "Big basket for toys"
+      },
+      {
+          "source": "Диаметр 30 см, высота 30 см",
+          "target": "Diameter 30 cm, height 30 cm"
+      },
+      {
+          "source": "690 руб.",
+          "target": "690 RUB"
+      },
+      {
+          "source": "Процесс производства",
+          "target": "Production process"
+      },
+      {
+          "source": "По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.",
+          "target": "At the request of our favorite followers, we made a detailed video for you about how our products appear."
+      },
+      {
+          "source": "Сделать заказ",
+          "target": "Order"
+      },
+      //form page
+      {
+          "source": "Вязание на заказ",
+          "target": "Custom knitting"
+      },
+      {
+          "source": "Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.",
+          "target": "We will be happy to realize your wishes! Please fill out this pre-order form, we will get back to you within 2 business days after we receive your information, to discuss the order and provide an estimate."
+      },
+      {
+          "source": "Тип",
+          "target": "Type"
+      },
+      {
+          "source": "Аксессуар для интерьера",
+          "target": "Interior accessory"
+      },
+      {
+          "source": "Детская игрушка",
+          "target": "Toy"
+      },
+      {
+          "source": "Цвет",
+          "target": "Color"
+      },
+      {
+          "source": "Белый",
+          "target": "White"
+      },
+      {
+          "source": "Серый",
+          "target": "Grey"
+      },
+      {
+          "source": "«Тиффани»",
+          "target": "«Tiffany»"
+      },
+      {
+          "source": "Черный",
+          "target": "Black"
+      },
+      {
+          "source": "Розовый",
+          "target": "Pink"
+      },
+      {
+          "source": "Оранжевый",
+          "target": "Orange"
+      },
+      {
+          "source": "ФИО",
+          "target": "Name"
+      },
+      {
+          "source": "Имя<sup>*</sup>:",
+          "target": "Name<sup>*</sup>:"
+      },
+      {
+          "source": "Фамилия<sup>*</sup>:",
+          "target": "Surname<sup>*</sup>:"
+      },
+      {
+          "source": "Отчество:",
+          "target": "Middle name:"
+      },
+      {
+          "source": "Тел<sup>*</sup>",
+          "target": "Phone<sup>*</sup>"
+      },
+      {
+          "source": "Доп",
+          "target": "More info"
+      },
+      {
+          "source": "Опишите все ваши пожелания к заказу",
+          "target": "Provide us with any details you want us to know"
+      },
+      {
+          "source": "<sup>*</sup>Поля обязательны для заполнения",
+          "target": "<sup>*</sup>Required fields"
+      },
+      {
+          "source": "Отправить заказ",
+          "target": "Send form"
+      }
   ]
 };
 

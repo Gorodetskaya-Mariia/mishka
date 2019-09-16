@@ -348,6 +348,8 @@ a {
     padding-right: 30px;
     padding-bottom: 35px;
     letter-spacing: 1.2px; }
+  .main-nav__item--main[href*="catalog.html"]{
+    min-width: 100px; }
   .main-nav__item--extra {
     padding-top: 15px;
     padding-left: 0;
@@ -766,7 +768,8 @@ a {
   .product__price {
     margin-bottom: 32px; }
   .product__options {
-    margin-bottom: 110px; }
+    margin-bottom: 110px;
+    width: 290px; }
   .product__order {
     margin-bottom: 65px; }
   .product__wrapper {
@@ -1401,6 +1404,7 @@ a {
   padding-bottom: 28px; }
 
 .catalog__price {
+  margin: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700; }
@@ -1430,7 +1434,9 @@ a {
   .catalog__item__wrapper {
     width: 305px;
     height: 332px;
-    padding-left: 27px; }
+    padding-left: 27px;
+    display: flex;
+    flex-direction: column; }
   .catalog__title {
     padding: 0;
     padding-top: 25px;
@@ -1438,11 +1444,11 @@ a {
   .catalog__description {
     margin: 0;
     margin-bottom: 21px;
-    padding-bottom: 175px; }
-    .catalog__description--third {
-      padding-bottom: 148px; }
+    order: 1;
+    flex-grow: 2; }
   .catalog__to-buy {
-    padding-left: 6px; }
+    padding-left: 6px;
+    order: 2; }
   .catalog__image-wrapper {
     position: relative;
     width: 334px;
@@ -1472,7 +1478,8 @@ a {
     padding: 0; }
   .catalog__title {
     padding-top: 24px;
-    padding-left: 28px; }
+    padding-left: 28px;
+    height: 50px; }
   .catalog__image-wrapper {
     width: 318px; }
   .catalog__image {
@@ -1481,9 +1488,7 @@ a {
   .catalog__description {
     margin-left: 28px;
     margin-right: 31px;
-    padding-bottom: 39px; }
-    .catalog__description--third {
-      padding-bottom: 14px; }
+    padding-bottom: 10px; }
   .catalog__to-buy {
     padding-bottom: 27px; }
   .catalog__price {
@@ -1544,6 +1549,7 @@ a {
   top: 22px;
   padding-left: 90px;
   margin-bottom: 25px;
+  width: 50%;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -1637,6 +1643,7 @@ a {
     padding-right: 175px;
     padding-left: 0;
     padding-top: 73px;
+    width: auto;
     background-position: 0 17px; }
   .video__play--wrapper {
     width: 680px; }
@@ -1701,8 +1708,6 @@ a {
     margin-bottom: 20px; }
   .form__field--client-data, .form__field--phone, .form__field--email {
     margin-bottom: 10px; }
-  .form__field--additional {
-    margin-bottom: 16px; }
   .form__field--additional {
     margin-bottom: 18px; }
 
@@ -1830,7 +1835,7 @@ a {
   fill: #63d1bb; }
 
 .form__message {
-  width: 260px;
+  width: 222px;
   min-height: 142px;
   padding: 17px;
   font-size: 17px;
@@ -1922,6 +1927,8 @@ a {
       padding-left: 50px;
       padding-right: 50px;
       margin-bottom: 53px; }
+    .form__field--additional p {
+      margin-bottom: 35px; }
   .form__label {
     font-size: 19px; }
     .form__label--radio {
