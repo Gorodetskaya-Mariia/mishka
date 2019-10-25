@@ -1,4 +1,7 @@
 # «Mishka» - handcrafted gifts
+
+The website contains from three pages («Home», «Catalog», «Custom knitting»). You can find detailed information about the company (a product of the week, reviews, contacts, etc) on the page «Home». The page «Catalog» displays products which you can buy. Also, you may fill out a pre-order form on page «Custom knitting» and order a product.
+
 ## Technology stack and techniques used in project:
 	* HTML5 CSS3 Javascript
 	* Swiper.js for slider functionality
@@ -13,9 +16,9 @@
 
 ## What is done:
 ### Pages implemented:
-> [Main page](https://gorodetskaya-mariia.github.io/Mishka/index.html)<br> 
-> [Catalog](https://gorodetskaya-mariia.github.io/Mishka/catalog.html)<br>
-> [Custom knitting](https://gorodetskaya-mariia.github.io/Mishka/form.html)<br> 
+> [Main page](https://gorodetskaya-mariia.github.io/mishka/index.html)<br> 
+> [Catalog](https://gorodetskaya-mariia.github.io/mishka/catalog.html)<br>
+> [Custom knitting](https://gorodetskaya-mariia.github.io/mishka/form.html)<br> 
 
 ### Project overview:
 - You can find a modal window to choose a size of products by clicking on button "Order"
